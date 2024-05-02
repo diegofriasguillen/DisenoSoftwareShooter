@@ -1529,6 +1529,8 @@ GameObject:
   m_Component:
   - component: {fileID: 981657855151246008}
   - component: {fileID: 7794827073189862569}
+  - component: {fileID: -7673545394953831163}
+  - component: {fileID: -474766440657143266}
   m_Layer: 0
   m_Name: Devil
   m_TagString: Untagged
@@ -1574,6 +1576,44 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-7673545394953831163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086892541434649347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd7920652b27a54d877aa1776c07a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vel: 0
+  damage: 0
+  health: 0
+--- !u!136 &-474766440657143266
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086892541434649347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7176740137866527825
 GameObject:
   m_ObjectHideFlags: 0
