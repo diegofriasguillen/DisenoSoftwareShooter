@@ -336,6 +336,8 @@ GameObject:
   m_Component:
   - component: {fileID: 563024061870188792}
   - component: {fileID: 1266988700508664105}
+  - component: {fileID: 813818495001589844}
+  - component: {fileID: -7668550666612529361}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -381,6 +383,44 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &813818495001589844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480141280635995253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd7920652b27a54d877aa1776c07a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vel: 0
+  damage: 0
+  health: 0
+--- !u!136 &-7668550666612529361
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480141280635995253}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5781977167735656887
 GameObject:
   m_ObjectHideFlags: 0
