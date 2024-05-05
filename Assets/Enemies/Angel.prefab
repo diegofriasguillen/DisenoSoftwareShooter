@@ -4311,6 +4311,7 @@ GameObject:
   - component: {fileID: 1970088360830248419}
   - component: {fileID: -3294273430585765758}
   - component: {fileID: -5724321154496849317}
+  - component: {fileID: 2192316959027056736}
   m_Layer: 0
   m_Name: Angel
   m_TagString: Untagged
@@ -4348,7 +4349,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 4.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -4369,8 +4370,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vel: 0
+  target: {fileID: 0}
+  bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
   damage: 0
   health: 0
+  distancia: 0
+  velAtt: 0
+  frecuencia: 3
+  atacando: 0
 --- !u!136 &-5724321154496849317
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4394,6 +4401,27 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2192316959027056736
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7996012572109869766}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10e17b388a8d3d24d8ed53674b969193, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8106668992715937822
 GameObject:
   m_ObjectHideFlags: 0

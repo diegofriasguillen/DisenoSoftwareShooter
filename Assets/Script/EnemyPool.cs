@@ -39,4 +39,12 @@ public class EnemyPool : MonoBehaviour
             Debug.Log("Terminada la list");
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            activo = true;
+        }
+    }
 }
