@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public float vel;
     public GameObject target;
     public GameObject bullet;
+    public EnemyPool pool;
 
     public int damage;
     public float health;
@@ -30,7 +31,7 @@ public class Enemy : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         GameObject Player = GameObject.FindGameObjectWithTag("Player");
-        agent.SetDestination(Player.transform.position);
+        target = Player;
     }
     private void Start()
     {
@@ -39,7 +40,11 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        distancia = Vector3.Distance(transform.position, target.transform.position);        
+        distancia = Vector3.Distance(transform.position, target.transform.position);
+        if (Active())
+        {
+            agent.SetDestination(target.transform.position);
+            }
     }
 
     IEnumerator atacar()
@@ -67,7 +72,7 @@ public class Enemy : MonoBehaviour
 
     void GetDamage()
     {
-        //health -= 1;//PlayerManager.damage
+        health -= PlayerManager.instance.damage;
         Debug.Log("Daño Recibido por: " + gameObject.name);
     }
 
@@ -79,6 +84,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    bool Active()
+    {
+        if (pool.activo && target != null)  return true;
+        else
+        {
+            return false;
+        }
+    }
 
     bool Distance()
     {

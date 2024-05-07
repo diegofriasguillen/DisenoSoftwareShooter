@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyPool : MonoBehaviour
 {
-    [SerializeField] bool activo;
+    public bool activo;
     [SerializeField] bool lanz;
     public List<GameObject> enemyPool;
     public Transform[] SpawnPoints;
@@ -40,11 +40,4 @@ public class EnemyPool : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            activo = true;
-        }
-    }
 }

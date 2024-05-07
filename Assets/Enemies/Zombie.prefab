@@ -1365,9 +1365,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1235568931017505757}
-  - component: {fileID: 6362678048224814601}
   - component: {fileID: 7601730135693691881}
   - component: {fileID: 6826024446196625697}
+  - component: {fileID: 6362678048224814601}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -1385,7 +1385,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.30633, y: 1.0500004, z: 4.0065126}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3312977860835116264}
@@ -1395,29 +1395,6 @@ Transform:
   - {fileID: 7017252733155661583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &6362678048224814601
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7789265732427302364}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &7601730135693691881
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1461,6 +1438,29 @@ MonoBehaviour:
   velAtt: 0
   frecuencia: 3
   atacando: 0
+--- !u!136 &6362678048224814601
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789265732427302364}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7789312748133879648
 GameObject:
   m_ObjectHideFlags: 0
