@@ -13,6 +13,14 @@ public class PlayerManager : MonoBehaviour
     public Transform mouse_position;
     public float bullet_damage;
 
+    //camera
+    public Camera camaraPrincipal; // Referencia a la cámara principal
+    public Transform mira; // Transform de la mira
+
+    // Variables para el disparo
+    public float distanciaDisparo = 10f; // Distancia máxima del disparo
+    public LineRenderer lineaDisparo; // Referencia al LineRenderer para la línea de disparo
+
     private void Start()
     {
         instance = this;
@@ -20,23 +28,61 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
-        mouse_position.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetKeyDown(KeyCode.Mouse0)) 
+        // Mover la mira
+        MoverMira();
+
+        // Disparar con el botón izquierdo del mouse
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (municion > 0)
-            {
-                Shoot();
-            }
+            Disparar();
         }
     }
 
-    void Shoot()
+    void MoverMira()
     {
-        GameObject bull = Instantiate(bullet,mouse_position.position ,new Quaternion(0,0,0,0),this.transform);
-        bull.GetComponent<Rigidbody>().AddForce(mouse_position.forward * bullet_damage);
-        Destroy(bull,3f);
-        municion--;
+        // Obtener la posición del mouse en la pantalla
+        Vector3 posicionMousePantalla = Input.mousePosition;
 
+        // Convertir la posición del mouse a coordenadas del mundo
+        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(posicionMousePantalla);
+
+        // Ajustar la posición horizontal de la mira a la del mouse
+        mira.position = new Vector3(posicionMouseMundo.x, mira.position.y, mira.position.z);
     }
+
+    // Función para disparar
+    void Disparar()
+    {
+        // Crear un Raycast desde la mira
+        RaycastHit hit;
+        if (Physics.Raycast(mira.position, mira.forward, out hit, distanciaDisparo))
+        {
+            // Si el Raycast colisiona con algo, mostrar la línea de disparo
+            lineaDisparo.SetPosition(0, mira.position);
+            lineaDisparo.SetPosition(1, hit.point);
+            lineaDisparo.enabled = true;
+
+            // Puedes agregar aquí lo que quieres que suceda al impactar, como dañar enemigos, etc.
+        }
+        else
+        {
+            // Si el Raycast no colisiona con nada, mostrar solo la primera parte de la línea
+            lineaDisparo.SetPosition(0, mira.position);
+            lineaDisparo.SetPosition(1, mira.position + mira.forward * distanciaDisparo);
+            lineaDisparo.enabled = true;
+        }
+
+        // Desactivar la línea de disparo después de un cierto tiempo
+        Invoke("DesactivarLineaDisparo", 0.1f);
+
+        Debug.Log("disparando");
+    }
+
+    // Función para desactivar la línea de disparo
+    void DesactivarLineaDisparo()
+    {
+        lineaDisparo.enabled = false;
+    }
+
 
 }
