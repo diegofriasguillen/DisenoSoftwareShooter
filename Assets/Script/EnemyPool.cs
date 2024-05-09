@@ -7,6 +7,7 @@ public class EnemyPool : MonoBehaviour
     public bool activo;
     [SerializeField] bool lanz;
     public List<GameObject> enemyPool;
+    public List<GameObject> LaunchedPool;
     public Transform[] SpawnPoints;
     [Header("Variables Enemy")]
     public float health;

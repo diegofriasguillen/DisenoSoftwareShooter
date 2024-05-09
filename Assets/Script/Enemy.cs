@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float vel;
     public GameObject target;
+    public Transform Pistol;
     public GameObject bullet;
     public EnemyPool pool;
 
@@ -18,7 +19,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] float frecuencia = 1.5f;
     public bool atacando;
 
-    public void Assing(float _vel, int _damage,float _health, EnemyPool _pool)
+    private bool canShoot = true;
+    private float shootCooldown = 1.5f;
+
+    public void Assing(float _vel, int _damage, float _health, EnemyPool _pool)
     {
         vel = _vel;
         damage = _damage;
@@ -36,16 +40,44 @@ public class Enemy : MonoBehaviour
     }
     private void Start()
     {
-        
+        StartCoroutine(atacar());
     }
 
+    private void Update()
+    {
+        //Att();
+    }
     private void FixedUpdate()
     {
         distancia = Vector3.Distance(transform.position, target.transform.position);
         if (Active())
         {
             agent.SetDestination(target.transform.position);
-            }
+        }
+      
+       
+        
+
+    }
+
+    void Att()
+    {
+        GameObject bull = Instantiate(bullet, Pistol.position, Quaternion.identity);
+        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
+        if (bulletRigidbody != null)
+        {
+            Vector3 direction = (Pistol.forward).normalized;
+            bulletRigidbody.velocity = direction * velAtt;
+        }
+        Destroy(bull, 3f);
+        StartCoroutine(ShootCooldown());
+    }
+
+    private IEnumerator ShootCooldown()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(shootCooldown);
+        canShoot = true;
     }
 
     IEnumerator atacar()
@@ -54,12 +86,6 @@ public class Enemy : MonoBehaviour
         {
 
             yield return new WaitForSeconds(frecuencia/2);
-            GameObject temp_bullet = Instantiate(bullet,this.transform);
-            Rigidbody rb = temp_bullet.GetComponent<Rigidbody>();
-
-            rb.AddForce(transform.forward * velAtt * 30);
-            
-            Destroy(temp_bullet, 3.75f);
             yield return new WaitForSeconds(frecuencia/2);
             StartCoroutine(atacar());
         }

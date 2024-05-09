@@ -6,6 +6,7 @@ public class ControlAnimacion : MonoBehaviour
     private PlayableDirector director;
     private bool isPaused = false;
 
+
     private void Start()
     {
         director = GetComponent<PlayableDirector>();
