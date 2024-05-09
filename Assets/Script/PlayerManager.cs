@@ -13,6 +13,9 @@ public class PlayerManager : MonoBehaviour
     public Transform mouse_position;
     public float bullet_damage;
 
+    private Animator animator;//
+    private bool isPaused = false;//
+
     //camera
     public Camera camaraPrincipal; // Referencia a la cámara principal
     public Transform mira; // Transform de la mira
@@ -24,6 +27,7 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         instance = this;
+        animator = GetComponent<Animator>();//
     }
 
     private void Update()
@@ -36,6 +40,24 @@ public class PlayerManager : MonoBehaviour
         {
             Disparar();
         }
+
+        if (isPaused)
+        {
+            // Aquí colocarías la lógica para verificar la condición de reanudación
+            // Por ejemplo, si la condición se cumple, llamas a ReanudarAnimacion()
+        }
+    }
+
+    public void PausarAnimacion()
+    {
+        animator.speed = 0f; // Pausa la animación estableciendo su velocidad a cero
+        isPaused = true;
+    }
+
+    public void ReanudarAnimacion()
+    {
+        animator.speed = 1f; // Reanuda la animación estableciendo su velocidad a 1
+        isPaused = false;
     }
 
     void MoverMira()
