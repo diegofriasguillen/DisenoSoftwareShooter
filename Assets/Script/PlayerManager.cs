@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    Enemy enemy;
+
+
     public static PlayerManager instance;
     public int vida;
     public int damage;
@@ -75,12 +78,19 @@ public class PlayerManager : MonoBehaviour
     // Función para disparar
     void Disparar()
     {
-        // Crear un Raycast desde la mira
+        // Obtener la posición del clic del mouse en la pantalla
+        Vector3 posicionMousePantalla = Input.mousePosition;
+
+        // Convertir la posición del clic del mouse a coordenadas del mundo
+        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(new Vector3(posicionMousePantalla.x, posicionMousePantalla.y, camaraPrincipal.transform.position.y));
+
+        // Crear un Raycast desde la posición del clic del mouse
         RaycastHit hit;
-        if (Physics.Raycast(mira.position, mira.forward, out hit, distanciaDisparo))
+        if (Physics.Raycast(posicionMouseMundo, camaraPrincipal.transform.forward, out hit, distanciaDisparo, LayerMask.GetMask("Enemy")))
         {
-            // Si el Raycast colisiona con algo, mostrar la línea de disparo
-            lineaDisparo.SetPosition(0, mira.position);
+            // Si el Raycast colisiona con algo que tenga el tag "Damage", mostrar la línea de disparo
+            enemy.GetDamage();
+            lineaDisparo.SetPosition(0, posicionMouseMundo);
             lineaDisparo.SetPosition(1, hit.point);
             lineaDisparo.enabled = true;
 
@@ -89,8 +99,8 @@ public class PlayerManager : MonoBehaviour
         else
         {
             // Si el Raycast no colisiona con nada, mostrar solo la primera parte de la línea
-            lineaDisparo.SetPosition(0, mira.position);
-            lineaDisparo.SetPosition(1, mira.position + mira.forward * distanciaDisparo);
+            lineaDisparo.SetPosition(0, posicionMouseMundo);
+            lineaDisparo.SetPosition(1, posicionMouseMundo + camaraPrincipal.transform.forward * distanciaDisparo);
             lineaDisparo.enabled = true;
         }
 
@@ -99,6 +109,9 @@ public class PlayerManager : MonoBehaviour
 
         Debug.Log("disparando");
     }
+
+
+
 
     // Función para desactivar la línea de disparo
     void DesactivarLineaDisparo()
