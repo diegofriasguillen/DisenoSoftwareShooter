@@ -29,7 +29,7 @@ public class EnemyPool : MonoBehaviour
         if (enemyPool.Count >0)
         {
             GameObject EnemyTemp=Instantiate(enemyPool[0], SpawnPoints[Random.Range(0, SpawnPoints.Length - 1)].position, new Quaternion(0, 0, 0, 0));
-            EnemyTemp.GetComponent<Enemy>().Assing(velocity, damage,health);
+            EnemyTemp.GetComponent<Enemy>().Assing(velocity, damage,health, this);
             enemyPool.RemoveAt(0);
 
         StartCoroutine(spawn());
