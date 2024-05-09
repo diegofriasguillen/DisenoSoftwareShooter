@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1174610361753398314}
   - component: {fileID: 7466438410746634533}
   - component: {fileID: 87998051614634355}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftPupil (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7523493285863313794}
   - component: {fileID: 7549525402779688919}
   - component: {fileID: 7004493669303377668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brains (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 6079039626718114416}
   - component: {fileID: 5551429231785386909}
   - component: {fileID: 43617623679867502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5159222573151779767}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Specifics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 4718445734523162517}
   - component: {fileID: 4988011983596997697}
   - component: {fileID: 3034172104004509890}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightPupil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 954864590779027108}
   - component: {fileID: 5710000420808977580}
   - component: {fileID: 3642248012813363998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brains (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 6512046463319887824}
   - component: {fileID: 8586278973359374333}
   - component: {fileID: 6088277308339341668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brains (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 2243323796730391105}
   - component: {fileID: 6567389786763652508}
   - component: {fileID: 4411955395019064906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tooth (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 4928969676238235192}
   - component: {fileID: 3970529689281742836}
   - component: {fileID: 5648462836408343319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brains (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 478255465700259695}
   - component: {fileID: 4104729199116231889}
   - component: {fileID: 7679831381105174337}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pants_Upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 5500282439999748972}
   - component: {fileID: 5315016499182269282}
   - component: {fileID: 7082850428532001358}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buckle_Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 3191601019779588028}
   - component: {fileID: 3454243017098427615}
   - component: {fileID: 8680573694787630597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 5153537094416016625}
   - component: {fileID: 8690729585535058393}
   - component: {fileID: 6337739042843839159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 1511250649008488532}
   - component: {fileID: 7304633692307764166}
   - component: {fileID: 6966150097047808187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tooth (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 4640756641643136965}
   - component: {fileID: 1710569145839484246}
   - component: {fileID: 5161405182440655668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 7601730135693691881}
   - component: {fileID: 6826024446196625697}
   - component: {fileID: 6362678048224814601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,6 +1432,7 @@ MonoBehaviour:
   vel: 0
   target: {fileID: 0}
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
+  pool: {fileID: 0}
   damage: 0
   health: 0
   distancia: 0
@@ -1473,7 +1474,7 @@ GameObject:
   - component: {fileID: 6848302614099824767}
   - component: {fileID: 7861170124834025467}
   - component: {fileID: 457068875363639909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1579,7 +1580,7 @@ GameObject:
   - component: {fileID: 3255028631845931676}
   - component: {fileID: 7056549003290603052}
   - component: {fileID: 2693084649770622949}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1665,7 +1666,7 @@ GameObject:
   - component: {fileID: 801411663105575294}
   - component: {fileID: 8363434905153018617}
   - component: {fileID: 7903708220276285618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pants_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1750,7 @@ GameObject:
   - component: {fileID: 4934685597049693341}
   - component: {fileID: 7561466337726812693}
   - component: {fileID: 8725487765498277271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1851,7 +1852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3312977860835116264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BaseCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1890,7 +1891,7 @@ GameObject:
   - component: {fileID: 631190938514093638}
   - component: {fileID: 5669388304385568600}
   - component: {fileID: 1402970705837797251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buckle_Outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1995,7 +1996,7 @@ GameObject:
   - component: {fileID: 7412280186490591788}
   - component: {fileID: 779009561028274562}
   - component: {fileID: 739590887115413472}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tooth (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

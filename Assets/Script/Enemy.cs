@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void GetDamage()
+    public void GetDamage()
     {
         health -= PlayerManager.instance.damage;
         Debug.Log("Daño Recibido por: " + gameObject.name);

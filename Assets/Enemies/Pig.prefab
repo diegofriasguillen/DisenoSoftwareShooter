@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5116612156496318657}
   - component: {fileID: 2337030775888675871}
   - component: {fileID: 258167570002498594}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: InnerEarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 1694632605279126221}
   - component: {fileID: 4735824412501822065}
   - component: {fileID: 155119803023102272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Nostril (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 7460663621718735554}
   - component: {fileID: 1424185791928313959}
   - component: {fileID: 3853164271223219066}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TailPart1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 2101761889045457456}
   - component: {fileID: 1486945796237935645}
   - component: {fileID: 2004035785734629646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: OuterEarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 905748371068087276}
   - component: {fileID: 8167204106085765277}
   - component: {fileID: 6711468676552606960}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Nostril (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6211637939738691129}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 5823568671659679108}
   - component: {fileID: 8699123320667787185}
   - component: {fileID: 2518901924998886483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TrotterFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7084819896915921604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BaseAnimal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 2194275075132338172}
   - component: {fileID: 5698272539385415480}
   - component: {fileID: 906042157028673707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: OuterEarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72605939846388477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7838138114354420061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 4521263839882116010}
   - component: {fileID: 2985892319411092652}
   - component: {fileID: 6118936581724325370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PupilR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 4628747530953287628}
   - component: {fileID: 908711330403323093}
   - component: {fileID: 5792342982459741447}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MouthOpening
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072059724005936785}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 8056394268319289705}
   - component: {fileID: 766753484040762469}
   - component: {fileID: 3000651228822640992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EPA_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 3698883657539885829}
   - component: {fileID: 1701389667485133243}
   - component: {fileID: 8732140280504551106}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Snout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1349,7 @@ GameObject:
   - component: {fileID: 1229179185593223358}
   - component: {fileID: 7984942717654425414}
   - component: {fileID: 1987576506687218425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8865545468319435297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 4493900179829210840}
   - component: {fileID: 4595597547483493694}
   - component: {fileID: 4618617005288022863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,6 +1551,7 @@ MonoBehaviour:
   vel: 0
   target: {fileID: 0}
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
+  pool: {fileID: 0}
   damage: 0
   health: 0
   distancia: 0
@@ -1592,7 +1593,7 @@ GameObject:
   - component: {fileID: 3785727549819071609}
   - component: {fileID: 5126882022651364911}
   - component: {fileID: 4454188732912600362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EPA_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1698,7 +1699,7 @@ GameObject:
   - component: {fileID: 8008553423821112277}
   - component: {fileID: 1109872901967176235}
   - component: {fileID: 7834396283432136064}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TrotterFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,7 +1804,7 @@ GameObject:
   - component: {fileID: 232602603486138408}
   - component: {fileID: 1048781245552825595}
   - component: {fileID: 2727387315845442259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TrotterFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,7 +1909,7 @@ GameObject:
   - component: {fileID: 6445788818978086785}
   - component: {fileID: 7066944315302720582}
   - component: {fileID: 6975714706376200094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PupilL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,7 +2014,7 @@ GameObject:
   - component: {fileID: 6059726445997019264}
   - component: {fileID: 4250172447790839986}
   - component: {fileID: 4575309797142345275}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TailPart1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9125508138445483470}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2152,7 +2153,7 @@ GameObject:
   - component: {fileID: 5941122968764303808}
   - component: {fileID: 970450886826869453}
   - component: {fileID: 6314054661611980351}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EyeballL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,7 +2259,7 @@ GameObject:
   - component: {fileID: 1562738222546806052}
   - component: {fileID: 7057342898428390219}
   - component: {fileID: 7784405236886925616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EPA_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2364,7 +2365,7 @@ GameObject:
   - component: {fileID: 1991358530524778488}
   - component: {fileID: 7739355537719927106}
   - component: {fileID: 6792311935296030664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: InnerEarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2469,7 +2470,7 @@ GameObject:
   - component: {fileID: 4245034995486244575}
   - component: {fileID: 2713217869650691828}
   - component: {fileID: 539168816872991960}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EyeballR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,7 +2576,7 @@ GameObject:
   - component: {fileID: 349172022386440533}
   - component: {fileID: 2370892405790534945}
   - component: {fileID: 2258674595520708028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EPA_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2681,7 +2682,7 @@ GameObject:
   - component: {fileID: 7136533918178750433}
   - component: {fileID: 4280779091204145584}
   - component: {fileID: 1613333864736849552}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TailPart1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2788,7 +2789,7 @@ GameObject:
   - component: {fileID: 1827485086172424527}
   - component: {fileID: 4865041376521199955}
   - component: {fileID: 7241285691927757033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TrotterFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2890,7 +2891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6711730788313454290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ears
   m_TagString: Untagged
   m_Icon: {fileID: 0}

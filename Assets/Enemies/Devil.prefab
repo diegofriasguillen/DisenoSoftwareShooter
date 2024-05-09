@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5349675566107604256}
   - component: {fileID: 7300579670927840192}
   - component: {fileID: 8098085255462900155}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Prong (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 6309650585347640905}
   - component: {fileID: 5158232359481737093}
   - component: {fileID: 837585836094041565}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Prong (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 4655098500587410761}
   - component: {fileID: 4672176481837981481}
   - component: {fileID: 1635675150164510560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TailUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 7576931141948509364}
   - component: {fileID: 1740206534687076567}
   - component: {fileID: 6014883778331935770}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 8143597762849197308}
   - component: {fileID: 5394108846438208729}
   - component: {fileID: 5199903665336015872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Prong Strut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7278931076933798490}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HornL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 7840685858012993294}
   - component: {fileID: 238147146160476682}
   - component: {fileID: 4774985614651929663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pants_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9025667708635884641}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Specifics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 6693948135454182728}
   - component: {fileID: 5937022836975628186}
   - component: {fileID: 8374063224619576609}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 4224356334605760873}
   - component: {fileID: 8636936555553235833}
   - component: {fileID: 2945795243122702062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Skullcap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3984611479907971140}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HornR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 4140601159913599311}
   - component: {fileID: 6090419289018795807}
   - component: {fileID: 2642580526072916783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BoxWings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7162999635740209382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 1396037415159718404}
   - component: {fileID: 8104596435593125095}
   - component: {fileID: 5303237170464003822}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 7549778614244958580}
   - component: {fileID: 3162263197031698835}
   - component: {fileID: 5215127814101328291}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Prong (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1222,7 +1222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1028582158685238546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 512473842176579411}
   - component: {fileID: 4626082016376423349}
   - component: {fileID: 1544642493468202520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 1476004911939524141}
   - component: {fileID: 81904171602648961}
   - component: {fileID: 4024973838486847177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 2825064615664312622}
   - component: {fileID: 8104189972224133623}
   - component: {fileID: 337491420939237378}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: -7673545394953831163}
   - component: {fileID: -474766440657143266}
   - component: {fileID: 7410168021212381620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Devil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,6 +1592,7 @@ MonoBehaviour:
   vel: 0
   target: {fileID: 0}
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
+  pool: {fileID: 0}
   damage: 0
   health: 0
   distancia: 0
@@ -1653,7 +1654,7 @@ GameObject:
   - component: {fileID: 3194215600723411368}
   - component: {fileID: 7864417733522417595}
   - component: {fileID: 6245027719575633123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255518610136680656}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trident
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4556189229922006957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BaseCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1809,7 +1810,7 @@ GameObject:
   - component: {fileID: 8348318324958567602}
   - component: {fileID: 257770910069809740}
   - component: {fileID: 4803152115340952077}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TailLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,7 +1915,7 @@ GameObject:
   - component: {fileID: 3573568233740913169}
   - component: {fileID: 5642530063082661632}
   - component: {fileID: 7165942982915898000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +2022,7 @@ GameObject:
   - component: {fileID: 2843168342259041664}
   - component: {fileID: 9109606425070274925}
   - component: {fileID: 7002652623568253525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}

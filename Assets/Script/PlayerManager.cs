@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    Enemy enemy;
-
-
     public static PlayerManager instance;
     public int vida;
     public int damage;
     public int municion = 30;
     public int cargador=35;
     public GameObject bullet;
-    public Transform mouse_position;
     public float bullet_damage;
 
     private Animator animator;//
@@ -89,16 +85,17 @@ public class PlayerManager : MonoBehaviour
         if (Physics.Raycast(posicionMouseMundo, camaraPrincipal.transform.forward, out hit, distanciaDisparo, LayerMask.GetMask("Enemy")))
         {
             // Si el Raycast colisiona con algo que tenga el tag "Damage", mostrar la línea de disparo
-            enemy.GetDamage();
             lineaDisparo.SetPosition(0, posicionMouseMundo);
             lineaDisparo.SetPosition(1, hit.point);
             lineaDisparo.enabled = true;
-
-            // Puedes agregar aquí lo que quieres que suceda al impactar, como dañar enemigos, etc.
+            Enemy enemy = hit.collider.gameObject.GetComponent<Enemy>();
+            enemy.GetDamage();
+            Debug.Log("Me electrocutaste");
         }
         else
         {
             // Si el Raycast no colisiona con nada, mostrar solo la primera parte de la línea
+            Debug.Log("Vacio");
             lineaDisparo.SetPosition(0, posicionMouseMundo);
             lineaDisparo.SetPosition(1, posicionMouseMundo + camaraPrincipal.transform.forward * distanciaDisparo);
             lineaDisparo.enabled = true;

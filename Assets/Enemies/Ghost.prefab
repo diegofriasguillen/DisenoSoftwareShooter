@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8597705325671879016}
   - component: {fileID: 7288220643097622378}
   - component: {fileID: 1320750019918946134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 7436747751857379181}
   - component: {fileID: 2628327253301922069}
   - component: {fileID: 6659101615239289596}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 523300233324200690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BaseCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7918623380695000243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Specifics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2177770053221246624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2473738427994575948}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 813818495001589844}
   - component: {fileID: -7668550666612529361}
   - component: {fileID: 4514348131950022973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,6 +399,7 @@ MonoBehaviour:
   vel: 0
   target: {fileID: 0}
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
+  pool: {fileID: 0}
   damage: 0
   health: 0
   distancia: 0
@@ -461,7 +462,7 @@ GameObject:
   - component: {fileID: 3575915293022800809}
   - component: {fileID: 8437645523346074074}
   - component: {fileID: 3388120908557144009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +568,7 @@ GameObject:
   - component: {fileID: 7647175374999280958}
   - component: {fileID: 2241529352983780927}
   - component: {fileID: 7869385438493738857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +651,7 @@ GameObject:
   - component: {fileID: 1150492712378606270}
   - component: {fileID: 682884851756345061}
   - component: {fileID: 2798095333978707927}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightPupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +735,7 @@ GameObject:
   - component: {fileID: 2258707281980346131}
   - component: {fileID: 2360513833409048900}
   - component: {fileID: 8425113431164462046}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +842,7 @@ GameObject:
   - component: {fileID: 7853975054339409112}
   - component: {fileID: 8822283856177314053}
   - component: {fileID: 2349825269423937966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +946,7 @@ GameObject:
   - component: {fileID: 4693136269196242509}
   - component: {fileID: 5590836243460065090}
   - component: {fileID: 7768454288393519350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1030,7 @@ GameObject:
   - component: {fileID: 8253784966510920795}
   - component: {fileID: 5629350804717227564}
   - component: {fileID: 2284498999386460429}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Opening
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1113,7 +1114,7 @@ GameObject:
   - component: {fileID: 5772789577212063465}
   - component: {fileID: 2018909675625994309}
   - component: {fileID: 8782178384240247622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1220,7 +1221,7 @@ GameObject:
   - component: {fileID: 1953625121817291726}
   - component: {fileID: 5187104067179808163}
   - component: {fileID: 6270112451315500984}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8262402578327567732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,7 +1356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5003691998821095826}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1392,7 @@ GameObject:
   - component: {fileID: 6093304901620045830}
   - component: {fileID: 1302511473935632849}
   - component: {fileID: 9064774472068554317}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
