@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 7581958896998171984}
   - component: {fileID: 7523493285863313794}
   - component: {fileID: 7549525402779688919}
-  - component: {fileID: 7004493669303377668}
   m_Layer: 3
   m_Name: Brains (2)
   m_TagString: Untagged
@@ -167,27 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7004493669303377668
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826654326946861940}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1349158786374163438
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +381,6 @@ GameObject:
   - component: {fileID: 2892521589095902089}
   - component: {fileID: 954864590779027108}
   - component: {fileID: 5710000420808977580}
-  - component: {fileID: 3642248012813363998}
   m_Layer: 3
   m_Name: Brains (1)
   m_TagString: Untagged
@@ -476,27 +453,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3642248012813363998
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3980253521897593077}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4369021647029290094
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +464,6 @@ GameObject:
   - component: {fileID: 8174355033536426306}
   - component: {fileID: 6512046463319887824}
   - component: {fileID: 8586278973359374333}
-  - component: {fileID: 6088277308339341668}
   m_Layer: 3
   m_Name: Brains (3)
   m_TagString: Untagged
@@ -581,27 +536,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6088277308339341668
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4369021647029290094}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4598255296919208853
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +547,6 @@ GameObject:
   - component: {fileID: 7014317915818858854}
   - component: {fileID: 2243323796730391105}
   - component: {fileID: 6567389786763652508}
-  - component: {fileID: 4411955395019064906}
   m_Layer: 3
   m_Name: Tooth (3)
   m_TagString: Untagged
@@ -686,27 +619,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4411955395019064906
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4598255296919208853}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4792279862056015070
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +630,6 @@ GameObject:
   - component: {fileID: 7017252733155661583}
   - component: {fileID: 4928969676238235192}
   - component: {fileID: 3970529689281742836}
-  - component: {fileID: 5648462836408343319}
   m_Layer: 3
   m_Name: Brains (4)
   m_TagString: Untagged
@@ -791,27 +702,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5648462836408343319
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4792279862056015070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5459315846861587377
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +796,6 @@ GameObject:
   - component: {fileID: 3645218315511339736}
   - component: {fileID: 5500282439999748972}
   - component: {fileID: 5315016499182269282}
-  - component: {fileID: 7082850428532001358}
   m_Layer: 3
   m_Name: Buckle_Inner
   m_TagString: Untagged
@@ -979,27 +868,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7082850428532001358
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6090572461314471813}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6816527553383242441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1046,6 @@ GameObject:
   - component: {fileID: 8685539037276786431}
   - component: {fileID: 1511250649008488532}
   - component: {fileID: 7304633692307764166}
-  - component: {fileID: 6966150097047808187}
   m_Layer: 3
   m_Name: Tooth (1)
   m_TagString: Untagged
@@ -1251,27 +1118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6966150097047808187
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7308996854670980069}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7535296011662905458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1319,6 @@ GameObject:
   - component: {fileID: 4109785651323592523}
   - component: {fileID: 6848302614099824767}
   - component: {fileID: 7861170124834025467}
-  - component: {fileID: 457068875363639909}
   m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
@@ -1546,29 +1391,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &457068875363639909
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7789312748133879648}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7818086581265917784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1571,6 @@ GameObject:
   - component: {fileID: 140855584669777869}
   - component: {fileID: 4934685597049693341}
   - component: {fileID: 7561466337726812693}
-  - component: {fileID: 8725487765498277271}
   m_Layer: 3
   m_Name: Stain
   m_TagString: Untagged
@@ -1822,27 +1643,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8725487765498277271
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8405994091056819672}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8675459114580674623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1690,6 @@ GameObject:
   - component: {fileID: 6570123829755876401}
   - component: {fileID: 631190938514093638}
   - component: {fileID: 5669388304385568600}
-  - component: {fileID: 1402970705837797251}
   m_Layer: 3
   m_Name: Buckle_Outer
   m_TagString: Untagged
@@ -1963,27 +1762,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1402970705837797251
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9073606254727785915}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9077958497694792658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,7 +1773,6 @@ GameObject:
   - component: {fileID: 1268640422991330438}
   - component: {fileID: 7412280186490591788}
   - component: {fileID: 779009561028274562}
-  - component: {fileID: 739590887115413472}
   m_Layer: 3
   m_Name: Tooth (2)
   m_TagString: Untagged
@@ -2068,24 +1845,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &739590887115413472
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9077958497694792658}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
