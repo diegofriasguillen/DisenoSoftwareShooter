@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class PlayerManager : MonoBehaviour
 {
+    public TextMeshProUGUI Tvida;
     public static PlayerManager instance;
     public int vida;
     public int damage;
@@ -25,6 +29,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        vida = 100;
         instance = this;
         animator = GetComponent<Animator>();//
     }
@@ -33,8 +38,8 @@ public class PlayerManager : MonoBehaviour
     {
         // Mover la mira
         MoverMira();
+        Tvida.text = "Vida: " + vida.ToString();
 
-        // Disparar con el botón izquierdo del mouse
         if (Input.GetButtonDown("Fire1"))
         {
             Disparar();
@@ -44,6 +49,11 @@ public class PlayerManager : MonoBehaviour
         {
             // Aquí colocarías la lógica para verificar la condición de reanudación
             // Por ejemplo, si la condición se cumple, llamas a ReanudarAnimacion()
+        }
+
+        if (vida <=0 )
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
@@ -107,7 +117,13 @@ public class PlayerManager : MonoBehaviour
         Debug.Log("disparando");
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            vida = vida - 15;
+        }
+    }
 
 
     // Función para desactivar la línea de disparo
