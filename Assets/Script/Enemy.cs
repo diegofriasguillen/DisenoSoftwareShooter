@@ -18,12 +18,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] float frecuencia = 1.5f;
     public bool atacando;
 
-    public void Assing(float _vel, int _damage,float _health)
+    public void Assing(float _vel, int _damage,float _health, EnemyPool _pool)
     {
         vel = _vel;
         damage = _damage;
         health = _health;
         agent.speed = _vel;
+        pool = _pool;
 
     }
 
