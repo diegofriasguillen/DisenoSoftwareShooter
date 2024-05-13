@@ -502,6 +502,7 @@ GameObject:
   - component: {fileID: -1091255767245077682}
   - component: {fileID: 1016736311101075940}
   - component: {fileID: 3304514398622715788}
+  - component: {fileID: 3410147034502249706}
   m_Layer: 3
   m_Name: Doctor
   m_TagString: Untagged
@@ -561,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vel: 0
   target: {fileID: 0}
+  Pistol: {fileID: 0}
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
   pool: {fileID: 0}
   damage: 0
@@ -613,6 +615,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3410147034502249706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796734586125057864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c852ac59e8825749b117b9e43980287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
+  player: {fileID: 0}
+  shootingRange: 20
+  bulletSpeed: 5
+  bulletLifetime: 5
+  timeBetweenShots: 5
 --- !u!1 &2865802775143554617
 GameObject:
   m_ObjectHideFlags: 0

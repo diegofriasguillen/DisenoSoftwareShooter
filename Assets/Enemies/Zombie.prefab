@@ -1245,6 +1245,7 @@ GameObject:
   - component: {fileID: 7601730135693691881}
   - component: {fileID: 6826024446196625697}
   - component: {fileID: 6362678048224814601}
+  - component: {fileID: 44478466017733475}
   m_Layer: 3
   m_Name: Zombie
   m_TagString: Untagged
@@ -1341,6 +1342,24 @@ CapsuleCollider:
   m_Height: 2.1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &44478466017733475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789265732427302364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c852ac59e8825749b117b9e43980287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
+  player: {fileID: 0}
+  shootingRange: 20
+  bulletSpeed: 5
+  bulletLifetime: 5
+  timeBetweenShots: 5
 --- !u!1 &7789312748133879648
 GameObject:
   m_ObjectHideFlags: 0

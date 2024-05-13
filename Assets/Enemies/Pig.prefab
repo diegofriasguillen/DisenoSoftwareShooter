@@ -1215,6 +1215,7 @@ GameObject:
   - component: {fileID: 4493900179829210840}
   - component: {fileID: 4595597547483493694}
   - component: {fileID: 4618617005288022863}
+  - component: {fileID: 8176003884929512194}
   m_Layer: 3
   m_Name: Pig
   m_TagString: Untagged
@@ -1307,6 +1308,24 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8176003884929512194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5038252354933983886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c852ac59e8825749b117b9e43980287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
+  player: {fileID: 0}
+  shootingRange: 20
+  bulletSpeed: 5
+  bulletLifetime: 5
+  timeBetweenShots: 5
 --- !u!1 &5540976510734404397
 GameObject:
   m_ObjectHideFlags: 0
