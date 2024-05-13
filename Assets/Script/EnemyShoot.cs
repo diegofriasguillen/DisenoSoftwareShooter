@@ -8,8 +8,8 @@ public class EnemyShoot : MonoBehaviour
     public float shootingRange = 10f;
     public float bulletSpeed = 5f;
     public float bulletLifetime = 10f;
-    public float timeBetweenShots = 1f; // Tiempo en segundos entre disparos
-    private float timeSinceLastShot = 0f;
+    public float delayDisparos = 1f; // Tiempo en segundos entre disparos
+    private float tiempoDespuesDisparo = 0f;
 
     void Start()
     {
@@ -18,11 +18,11 @@ public class EnemyShoot : MonoBehaviour
 
     void Update()
     {
-        timeSinceLastShot += Time.deltaTime;
-        if (Vector3.Distance(transform.position, player.position) <= shootingRange && timeSinceLastShot >= timeBetweenShots)
+        tiempoDespuesDisparo += Time.deltaTime;
+        if (Vector3.Distance(transform.position, player.position) <= shootingRange && tiempoDespuesDisparo >= delayDisparos)
         {
             ShootAtPlayer();
-            timeSinceLastShot = 0f;
+            tiempoDespuesDisparo = 0f;
         }
     }
 
