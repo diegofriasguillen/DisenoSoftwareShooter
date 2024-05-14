@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c852ac59e8825749b117b9e43980287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
+  bulletPrefab: {fileID: 1876890064051851165, guid: 0d6bd817c5c698d46af9bdb3c7d822b7, type: 3}
   player: {fileID: 0}
   shootingRange: 5
   bulletSpeed: 3
@@ -1836,7 +1836,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47f8481dd8680474aacf6ae68f330dcd, type: 2}
+  - {fileID: 2100000, guid: 991ae2ba3864a4744afe48f6ea06e70c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2087,7 +2087,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47f8481dd8680474aacf6ae68f330dcd, type: 2}
+  - {fileID: 2100000, guid: 991ae2ba3864a4744afe48f6ea06e70c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
