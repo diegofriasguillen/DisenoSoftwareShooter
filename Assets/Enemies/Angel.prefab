@@ -3519,6 +3519,7 @@ GameObject:
   - component: {fileID: -3294273430585765758}
   - component: {fileID: -5724321154496849317}
   - component: {fileID: 2192316959027056736}
+  - component: {fileID: 2565488725010851217}
   m_Layer: 3
   m_Name: Angel
   m_TagString: Enemy
@@ -3632,6 +3633,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2565488725010851217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7996012572109869766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c852ac59e8825749b117b9e43980287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
+  player: {fileID: 0}
+  shootingRange: 5
+  bulletSpeed: 2
+  bulletLifetime: 5
+  delayDisparos: 3
 --- !u!1 &8106668992715937822
 GameObject:
   m_ObjectHideFlags: 0
