@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
     public PlayerManager playerManager;

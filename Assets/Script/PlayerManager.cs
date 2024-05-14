@@ -32,6 +32,10 @@ public class PlayerManager : MonoBehaviour
         vida = 100;
         instance = this;
         animator = GetComponent<Animator>();//
+      
+        
+            Time.timeScale = 1f;
+        
     }
 
     private void Update()
