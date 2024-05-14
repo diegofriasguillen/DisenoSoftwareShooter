@@ -1780,6 +1780,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 8.983334
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 9.016666
     functionName: PausarAnimacion
     data: 
@@ -1838,6 +1845,13 @@ AnimationClip:
     messageOptions: 0
   - time: 23.016666
     functionName: PausarAnimacion
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 23.016666
+    functionName: WinCondition
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

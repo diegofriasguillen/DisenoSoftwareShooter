@@ -12,6 +12,7 @@ public class ControlAnimacion : MonoBehaviour
     public GameObject medicine3; // Referencia al objeto que quieres instanciar
     public GameObject medicine4; // Referencia al objeto que quieres instanciar
     public GameObject medicine5; // Referencia al objeto que quieres instanciar
+    public GameObject winPanel; // Referencia al objeto que quieres instanciar
    
 
     private void Start()
@@ -84,6 +85,20 @@ public class ControlAnimacion : MonoBehaviour
         ReanudarAnimacion(); // Reanuda la animación cuando no hay más enemigos
     }
 
+    private IEnumerator WinCondition()
+    {
+
+        yield return new WaitForSeconds(5); // Espera 2 segundos
+
+        while (ContarEnemigos() > 0)
+        {
+            yield return new WaitForSeconds(0.5f); // Vuelve a comprobar cada 0.5 segundos
+        }
+
+        InstanciarWinPanel(); // Reanuda la animación cuando no hay más enemigos
+        Time.timeScale = 0;
+    }
+
     // Método para contar los enemigos en la escena
     private int ContarEnemigos()
     {
@@ -114,6 +129,10 @@ public class ControlAnimacion : MonoBehaviour
     private void InstanciarObjeto5()
     {
         medicine5.SetActive(true);
+    }
+    private void InstanciarWinPanel()
+    {
+        winPanel.SetActive(true);
     }
 }
 
