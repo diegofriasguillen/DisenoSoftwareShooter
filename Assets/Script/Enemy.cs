@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Enemy : MonoBehaviour
     public Transform Pistol;
     public GameObject bullet;
     public EnemyPool pool;
+    public Slider slider;
 
     public int damage;
     public float health;
@@ -29,7 +31,7 @@ public class Enemy : MonoBehaviour
         health = _health;
         agent.speed = _vel;
         pool = _pool;
-
+        
     }
 
     private void Awake()
@@ -41,11 +43,13 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         StartCoroutine(atacar());
+        slider = GetComponentInChildren<Slider>();
+        slider.maxValue = health;
     }
 
     private void Update()
     {
-        //Att();
+        
     }
     private void FixedUpdate()
     {
@@ -107,6 +111,7 @@ public class Enemy : MonoBehaviour
             PlayerManager.instance.AddHealth(15);
             Destroy(gameObject);
         }
+        slider.value = health;
     }
 
     private void OnTriggerEnter(Collider other)
