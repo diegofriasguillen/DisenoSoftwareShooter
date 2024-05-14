@@ -1773,7 +1773,21 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 8.966666
+  - time: 8.983334
+    functionName: OnTriggerEnter
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 8.983334
+    functionName: EsperarYReanudar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 9
     functionName: PausarAnimacion
     data: 
     objectReferenceParameter: {fileID: 0}

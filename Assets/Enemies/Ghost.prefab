@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: -5832348250566132956}
   m_Layer: 3
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
   shootingRange: 20
   bulletSpeed: 5
   bulletLifetime: 5
-  timeBetweenShots: 5
+  delayDisparos: 1
 --- !u!1 &5781977167735656887
 GameObject:
   m_ObjectHideFlags: 0

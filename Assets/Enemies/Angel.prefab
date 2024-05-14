@@ -3521,7 +3521,7 @@ GameObject:
   - component: {fileID: 2192316959027056736}
   m_Layer: 3
   m_Name: Angel
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
