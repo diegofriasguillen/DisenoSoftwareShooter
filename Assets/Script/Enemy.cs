@@ -97,17 +97,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void GetDamage()
+    public void GetDamage(float damageAmount)
     {
-        health -= PlayerManager.instance.damage;
+        health -= damageAmount;
         Debug.Log("Daño Recibido por: " + gameObject.name);
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Damage")
         {
-            GetDamage();
+            GetDamage(10f);
         }
     }
 

@@ -1314,7 +1314,7 @@ MonoBehaviour:
   bullet: {fileID: 4737014365591493729, guid: 571e36acce10b794e8690e88fbcd8e71, type: 3}
   pool: {fileID: 0}
   damage: 0
-  health: 0
+  health: 50
   distancia: 0
   velAtt: 0
   frecuencia: 3
@@ -1356,10 +1356,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1876890064051851165, guid: c42c4ceb76d210144a8609d1f4734ed5, type: 3}
   player: {fileID: 0}
-  shootingRange: 20
-  bulletSpeed: 5
+  shootingRange: 5
+  bulletSpeed: 3
   bulletLifetime: 5
-  timeBetweenShots: 5
+  delayDisparos: 2
 --- !u!1 &7789312748133879648
 GameObject:
   m_ObjectHideFlags: 0

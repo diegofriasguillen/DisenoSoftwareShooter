@@ -5,10 +5,10 @@ public class EnemyShoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform player;
-    public float shootingRange = 10f;
-    public float bulletSpeed = 5f;
-    public float bulletLifetime = 10f;
-    public float delayDisparos = 1f; // Tiempo en segundos entre disparos
+    public float shootingRange = 5f;
+    public float bulletSpeed = 2f;
+    public float bulletLifetime = 5f;
+    public float delayDisparos = 3f; // Tiempo en segundos entre disparos
     private float tiempoDespuesDisparo = 0f;
 
     void Start()
