@@ -127,5 +127,8 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-
+    void DesactivarLineaDisparo()
+    {
+        lineaDisparo.enabled = false;
+    }
 }
