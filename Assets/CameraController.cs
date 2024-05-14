@@ -6,7 +6,12 @@ public class ControlAnimacion : MonoBehaviour
 {
     private PlayableDirector director;
     private bool isPaused = false;
+    int counter;
     public GameObject medicine; // Referencia al objeto que quieres instanciar
+    public GameObject medicine2; // Referencia al objeto que quieres instanciar
+    public GameObject medicine3; // Referencia al objeto que quieres instanciar
+    public GameObject medicine4; // Referencia al objeto que quieres instanciar
+    public GameObject medicine5; // Referencia al objeto que quieres instanciar
    
 
     private void Start()
@@ -26,13 +31,34 @@ public class ControlAnimacion : MonoBehaviour
     {
         director.playableGraph.GetRootPlayable(0).SetSpeed(0); // Pausa la animación
         isPaused = true;
-        InstanciarObjeto();
+        switch (counter)
+        {
+            case 0:
+                InstanciarObjeto();
+                break;
+            case 1:
+                InstanciarObjeto2();
+                break;
+            case 2:
+                InstanciarObjeto3();
+                break;
+            case 3:
+                InstanciarObjeto4();
+                break;
+            case 4:
+                InstanciarObjeto5();
+                break;
+            default:
+                InstanciarObjeto5();
+                break;
+        }
     }
 
     public void ReanudarAnimacion()
     {
         director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
         isPaused = false;
+        counter++;
     }
 
     // Método llamado por un evento en la animación
@@ -48,7 +74,7 @@ public class ControlAnimacion : MonoBehaviour
     private IEnumerator EsperarYReanudar()
     {
         
-        yield return new WaitForSeconds(2); // Espera 2 segundos
+        yield return new WaitForSeconds(5); // Espera 2 segundos
 
         while (ContarEnemigos() > 0)
         {
@@ -72,6 +98,22 @@ public class ControlAnimacion : MonoBehaviour
     private void InstanciarObjeto()
     {
         medicine.SetActive(true);
+    }
+    private void InstanciarObjeto2()
+    {
+        medicine2.SetActive(true);
+    }
+    private void InstanciarObjeto3()
+    {
+        medicine3.SetActive(true);
+    }
+    private void InstanciarObjeto4()
+    {
+        medicine4.SetActive(true);
+    }
+    private void InstanciarObjeto5()
+    {
+        medicine5.SetActive(true);
     }
 }
 

@@ -625,7 +625,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 23.05
+    m_StopTime: 23.016666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -1774,28 +1774,35 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 8.983334
-    functionName: OnTriggerEnter
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 8.983334
     functionName: EsperarYReanudar
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 9
+  - time: 9.016666
     functionName: PausarAnimacion
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 12.933333
+  - time: 12.983334
+    functionName: EsperarYReanudar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 13.016666
     functionName: PausarAnimacion
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 14.983334
+    functionName: EsperarYReanudar
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -1808,14 +1815,28 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 19
+  - time: 18.983334
+    functionName: EsperarYReanudar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 19.016666
     functionName: PausarAnimacion
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 23.05
+  - time: 22.983334
+    functionName: EsperarYReanudar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 23.016666
     functionName: PausarAnimacion
     data: 
     objectReferenceParameter: {fileID: 0}

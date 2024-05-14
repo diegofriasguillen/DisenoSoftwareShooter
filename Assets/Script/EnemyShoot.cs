@@ -29,6 +29,7 @@ public class EnemyShoot : MonoBehaviour
     void ShootAtPlayer()
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        bullet.GetComponent<Bullet>().Damage = GetComponent<Enemy>().damage;
         Vector3 direction = (player.position - transform.position).normalized;
         bullet.GetComponent<Rigidbody>().velocity = direction * bulletSpeed;
         Destroy(bullet, bulletLifetime);

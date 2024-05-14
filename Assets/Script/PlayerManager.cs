@@ -7,13 +7,13 @@ using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
-    public TextMeshProUGUI Tvida;
     public static PlayerManager instance;
+
+    public TextMeshProUGUI Tvida;
     public int vida;
     public int damage;
     public int municion = 30;
     public int cargador=35;
-    public GameObject bullet;
     public float bullet_damage = 10f;
 
     private Animator animator;//
@@ -115,11 +115,18 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            vida = vida - 5;
+            vida -= other.GetComponent<Bullet>().Damage;
         }
     }
 
-
+    public void AddHealth(int heal)
+    {
+        vida += heal;
+        if (vida > 100)
+        {
+            vida = 100;
+        }
+    }
     // Función para desactivar la línea de disparo
     void DesactivarLineaDisparo()
     {

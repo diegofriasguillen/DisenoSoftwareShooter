@@ -104,6 +104,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            PlayerManager.instance.AddHealth(15);
             Destroy(gameObject);
         }
     }
