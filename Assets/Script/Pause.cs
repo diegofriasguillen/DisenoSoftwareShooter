@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class Pause : MonoBehaviour
 {
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
+    public PlayerManager playerManager;
 
     public void Pause_()
     {
-        Time.timeScale = 0f;
         botonPausa.SetActive(false);
         menuPausa.SetActive(true);
+        playerManager.lineaDisparo.gameObject.SetActive(false);
+        Time.timeScale = 0f;
     }
 
     public void Play()
@@ -21,6 +22,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
+        playerManager.lineaDisparo.gameObject.SetActive(true);
     }
 
     public void Restart()

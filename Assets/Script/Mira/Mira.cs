@@ -9,6 +9,7 @@ public class CursorController : MonoBehaviour
     {
         // Establecer la textura personalizada como cursor
         Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+        
     }
 
     void Update()

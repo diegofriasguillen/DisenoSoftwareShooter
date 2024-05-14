@@ -126,11 +126,6 @@ public class PlayerManager : MonoBehaviour
             vida = 100;
         }
     }
-    // Función para desactivar la línea de disparo
-    void DesactivarLineaDisparo()
-    {
-        lineaDisparo.enabled = false;
-    }
 
 
 }
