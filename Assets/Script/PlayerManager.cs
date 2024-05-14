@@ -47,8 +47,7 @@ public class PlayerManager : MonoBehaviour
 
         if (isPaused)
         {
-            // Aquí colocarías la lógica para verificar la condición de reanudación
-            // Por ejemplo, si la condición se cumple, llamas a ReanudarAnimacion()
+
         }
 
         if (vida <=0 )
@@ -79,6 +78,7 @@ public class PlayerManager : MonoBehaviour
 
         // Ajustar la posición horizontal de la mira a la del mouse
         mira.position = new Vector3(posicionMouseMundo.x, mira.position.y, mira.position.z);
+
     }
 
     // Función para disparar
@@ -96,7 +96,6 @@ public class PlayerManager : MonoBehaviour
             lineaDisparo.enabled = true;
             Enemy enemy = hit.collider.gameObject.GetComponent<Enemy>();
             enemy.GetDamage(bullet_damage); 
-            Debug.Log("Me electrocutaste");
         }
         else
         {
