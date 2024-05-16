@@ -13,11 +13,11 @@ public class PlayerManager : MonoBehaviour
     public int vida;
     public int damage;
     public int municion = 30;
-    public int cargador=35;
+    public int cargador = 35;
     public float bullet_damage = 10f;
 
-    private Animator animator;//
-    private bool isPaused = false;//
+    private Animator animator;
+    private bool isPaused = false;
 
     //camera
     public Camera camaraPrincipal; // Referencia a la cámara principal
@@ -31,11 +31,9 @@ public class PlayerManager : MonoBehaviour
     {
         vida = 100;
         instance = this;
-        animator = GetComponent<Animator>();//
-      
-        
-            Time.timeScale = 1f;
-        
+        animator = GetComponent<Animator>();
+
+        Time.timeScale = 1f;
     }
 
     private void Update()
@@ -54,7 +52,7 @@ public class PlayerManager : MonoBehaviour
 
         }
 
-        if (vida <=0 )
+        if (vida <= 0)
         {
             SceneManager.LoadScene("MainMenu");
         }
@@ -78,34 +76,41 @@ public class PlayerManager : MonoBehaviour
         Vector3 posicionMousePantalla = Input.mousePosition;
 
         // Convertir la posición del mouse a coordenadas del mundo
-        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(posicionMousePantalla);
+        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(new Vector3(posicionMousePantalla.x, posicionMousePantalla.y, camaraPrincipal.nearClipPlane));
 
-        // Ajustar la posición horizontal de la mira a la del mouse
-        mira.position = new Vector3(posicionMouseMundo.x, mira.position.y, mira.position.z);
-
+        // Ajustar la posición de la mira a la del mouse
+        mira.position = new Vector3(posicionMouseMundo.x, posicionMouseMundo.y, mira.position.z);
     }
 
     // Función para disparar
     void Disparar()
     {
+        // Obtener la posición del mouse en la pantalla
         Vector3 posicionMousePantalla = Input.mousePosition;
 
-        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(new Vector3(posicionMousePantalla.x, posicionMousePantalla.y, camaraPrincipal.transform.position.y));
+        // Convertir la posición del mouse a coordenadas del mundo
+        Vector3 posicionMouseMundo = camaraPrincipal.ScreenToWorldPoint(new Vector3(posicionMousePantalla.x, posicionMousePantalla.y, camaraPrincipal.nearClipPlane));
+
+        // Calcular la dirección del disparo
+        Vector3 direccionDisparo = (posicionMouseMundo - camaraPrincipal.transform.position).normalized;
 
         RaycastHit hit;
-        if (Physics.Raycast(posicionMouseMundo, camaraPrincipal.transform.forward, out hit, distanciaDisparo, LayerMask.GetMask("Enemy")))
+        if (Physics.Raycast(camaraPrincipal.transform.position, direccionDisparo, out hit, distanciaDisparo, LayerMask.GetMask("Enemy")))
         {
-            lineaDisparo.SetPosition(0, posicionMouseMundo);
+            lineaDisparo.SetPosition(0, camaraPrincipal.transform.position);
             lineaDisparo.SetPosition(1, hit.point);
             lineaDisparo.enabled = true;
             Enemy enemy = hit.collider.gameObject.GetComponent<Enemy>();
-            enemy.GetDamage(bullet_damage); 
+            if (enemy != null)
+            {
+                enemy.GetDamage(bullet_damage);
+            }
         }
         else
         {
             Debug.Log("Vacio");
-            lineaDisparo.SetPosition(0, posicionMouseMundo);
-            lineaDisparo.SetPosition(1, posicionMouseMundo + camaraPrincipal.transform.forward * distanciaDisparo);
+            lineaDisparo.SetPosition(0, camaraPrincipal.transform.position);
+            lineaDisparo.SetPosition(1, camaraPrincipal.transform.position + direccionDisparo * distanciaDisparo);
             lineaDisparo.enabled = true;
         }
 
