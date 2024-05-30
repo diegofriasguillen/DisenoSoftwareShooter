@@ -13,7 +13,12 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
+
+        if (lines.Length>0)
+        {
         StartDialogue();
+        }
+
     }
 
     // Update is called once per frame
