@@ -5707,7 +5707,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 712832188644803207}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: InitialMenu
+        m_MethodName: InitialMenuLevelTwo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5778,7 +5778,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 712832188644803207}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: InitialMenu
+        m_MethodName: InitialMenuLevelTwo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
