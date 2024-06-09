@@ -7218,6 +7218,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6732012977011695404}
     - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
+      propertyPath: bullet_damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
       propertyPath: camaraPrincipal
       value: 
       objectReference: {fileID: 963194227}
