@@ -13,6 +13,7 @@ public class ControlAnimacion : MonoBehaviour
     public GameObject medicine4; // Referencia al objeto que quieres instanciar
     public GameObject medicine5; // Referencia al objeto que quieres instanciar
     public GameObject winPanel; // Referencia al objeto que quieres instanciar
+    
    
 
     private void Start()
@@ -22,11 +23,20 @@ public class ControlAnimacion : MonoBehaviour
 
     private void Update()
     {
+        
         if (isPaused && Input.GetKeyDown(KeyCode.R))
         {
             ReanudarAnimacion();
         }
     }
+
+    public void PausaInicial()
+    {
+        director.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        isPaused = true;
+    }
+
+    
 
     public void PausarAnimacion()
     {
@@ -60,6 +70,13 @@ public class ControlAnimacion : MonoBehaviour
         director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
         isPaused = false;
         counter++;
+    }
+
+    public void QuitarPausaAnim()
+    {
+        director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
+        isPaused = false;
+        
     }
 
     // Método llamado por un evento en la animación
