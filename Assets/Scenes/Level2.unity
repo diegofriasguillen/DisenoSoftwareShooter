@@ -244,7 +244,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 615730119}
   - {fileID: 515018151}
   - {fileID: 188572825}
   m_Father: {fileID: 1283542786}
@@ -300,18 +299,13 @@ MonoBehaviour:
   activo: 1
   lanz: 0
   enemyPool:
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 9148458067798482879, guid: 30f126570976ae7478b431eea0b0fa65, type: 3}
   LaunchedPool: []
   SpawnPoints:
-  - {fileID: 615730119}
   - {fileID: 515018151}
-  health: 85
-  velocity: 1.5
-  damage: 15
+  health: 525
+  velocity: 0.5
+  damage: 25
 --- !u!64 &188572827
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1438,7 +1432,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawn point2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1450,65 +1444,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515018150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.507, y: 0, z: -1.19}
+  m_LocalPosition: {x: 1.833, y: 1.245, z: -0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 91465110}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &615730118
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 615730119}
-  - component: {fileID: 615730120}
-  m_Layer: 0
-  m_Name: Spawn point1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &615730119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615730118}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6060009, y: 0.51112366, z: 0.425}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 91465110}
-  m_RootOrder: -2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &615730120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615730118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a13f4ce6cf79c1409fb0b672b10b653, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activo: 1
-  lanz: 0
-  enemyPool: []
-  LaunchedPool: []
-  SpawnPoints: []
-  health: 0
-  velocity: 0
-  damage: 0
 --- !u!1001 &711807025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2672,18 +2614,18 @@ MonoBehaviour:
   activo: 1
   lanz: 0
   enemyPool:
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
+  - {fileID: 6210124833337353233, guid: 1cda95aa495de71428d97e44e2ce930f, type: 3}
   - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 6210124833337353233, guid: 1cda95aa495de71428d97e44e2ce930f, type: 3}
   - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 6210124833337353233, guid: 1cda95aa495de71428d97e44e2ce930f, type: 3}
   LaunchedPool: []
   SpawnPoints:
   - {fileID: 1729649108}
   - {fileID: 1429552770}
-  health: 85
-  velocity: 1.5
-  damage: 15
+  health: 150
+  velocity: 1.25
+  damage: 16
 --- !u!64 &1166726929
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3275,18 +3217,18 @@ MonoBehaviour:
   activo: 1
   lanz: 0
   enemyPool:
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
+  - {fileID: 2796734586125057864, guid: 3cf319ea038c5b24a9379f19eb19004f, type: 3}
   - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 2796734586125057864, guid: 3cf319ea038c5b24a9379f19eb19004f, type: 3}
   - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 2796734586125057864, guid: 3cf319ea038c5b24a9379f19eb19004f, type: 3}
   LaunchedPool: []
   SpawnPoints:
   - {fileID: 1745568391}
   - {fileID: 1457053409}
-  health: 85
-  velocity: 1.5
-  damage: 15
+  health: 150
+  velocity: 2
+  damage: 17
 --- !u!64 &1552787309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4517,18 +4459,18 @@ MonoBehaviour:
   activo: 1
   lanz: 0
   enemyPool:
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
   - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
-  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
+  - {fileID: 7086892541434649347, guid: 7a7dd35f2618e5d4d897af5fd7b7eba5, type: 3}
+  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 7086892541434649347, guid: 7a7dd35f2618e5d4d897af5fd7b7eba5, type: 3}
   - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
   LaunchedPool: []
   SpawnPoints:
   - {fileID: 899872217}
   - {fileID: 282190033}
-  health: 85
-  velocity: 1.5
-  damage: 15
+  health: 115
+  velocity: 2
+  damage: 16
 --- !u!64 &1827408637
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8141,10 +8083,10 @@ MonoBehaviour:
   lanz: 0
   enemyPool:
   - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 5480141280635995253, guid: 0f14de37fa17d0b45a48d477db452fa4, type: 3}
   - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
-  - {fileID: 5038252354933983886, guid: 0091f06bb5243aa49b44e207e353a3b4, type: 3}
+  - {fileID: 7789265732427302364, guid: 220733f6accc40a4d82b65a5f5162ff6, type: 3}
+  - {fileID: 7996012572109869766, guid: 4688749eac728cf48952b84ed8dcf04d, type: 3}
   LaunchedPool: []
   SpawnPoints:
   - {fileID: 2510213073273023082}
