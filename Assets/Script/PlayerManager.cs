@@ -15,6 +15,9 @@ public class PlayerManager : MonoBehaviour
     public int municion = 30;
     public int cargador = 35;
     public float bullet_damage = 10f;
+    public GameObject gameOverPanel;
+    public GameObject vidaText;
+    public GameObject pauseButton;
 
     private Animator animator;
     private bool isPaused = false;
@@ -54,7 +57,10 @@ public class PlayerManager : MonoBehaviour
 
         if (vida <= 0)
         {
-            SceneManager.LoadScene("MainMenu");
+            gameOverPanel.SetActive(true);
+            vidaText.SetActive(false);
+            pauseButton.SetActive(false);
+            Time.timeScale = 0;
         }
     }
 

@@ -7214,13 +7214,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 671953915319811689}
     - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
+      propertyPath: vidaText
+      value: 
+      objectReference: {fileID: 2562129707285490919}
+    - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1515189674522917012}
+    - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
       propertyPath: lineaDisparo
       value: 
       objectReference: {fileID: 6732012977011695404}
     - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
       propertyPath: bullet_damage
-      value: 10
+      value: 146.54
       objectReference: {fileID: 0}
+    - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 1222745174382366800}
     - target: {fileID: 161522370567642596, guid: b8a7df364be99d94395a17e92441b663, type: 3}
       propertyPath: camaraPrincipal
       value: 
