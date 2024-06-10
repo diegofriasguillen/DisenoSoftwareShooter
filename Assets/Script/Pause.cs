@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
+
+  
     private void Start()
     {
         Time.timeScale = 1f;
@@ -29,6 +31,8 @@ public class Pause : MonoBehaviour
         menuPausa.SetActive(false);
         playerManager.lineaDisparo.gameObject.SetActive(true);
     }
+
+    
 
     public void Restart()
     {

@@ -116,6 +116,14 @@ public class CameraControler : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void CompleteLevel1()
+    {
+        // Guardar que el nivel 1 ha sido completado
+        PlayerPrefs.SetInt("Level1Completed", 1);
+        PlayerPrefs.Save();
+        // Puedes agregar cualquier otra lógica aquí, como cargar una nueva escena
+    }
+
     // Método para contar los enemigos en la escena
     private int ContarEnemigos()
     {

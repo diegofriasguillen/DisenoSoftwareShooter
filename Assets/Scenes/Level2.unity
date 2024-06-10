@@ -5683,6 +5683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65c51a0dd1e0ae4a945d97cc669c9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneIndex: 0
   botonPausa: {fileID: 5004589444866741274}
   menuPausa: {fileID: 3360307925384579819}
   playerManager: {fileID: 79176857}
@@ -6196,7 +6197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 6.5009956, y: -118}
+  m_AnchoredPosition: {x: 6.5009956, y: 0}
   m_SizeDelta: {x: 701.8843, y: 99.4083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1786414557560829201
@@ -7178,7 +7179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 6.5009956, y: -128}
+  m_AnchoredPosition: {x: 6.5009956, y: 0}
   m_SizeDelta: {x: 701.8843, y: 99.4083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &3568954563626973580
@@ -7431,7 +7432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -152}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4297770498708985676
