@@ -1162,7 +1162,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 18.966667
-    functionName: EsperarYReanudar
+    functionName: PausaBoss
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

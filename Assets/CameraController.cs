@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using System.Collections;
 
-public class ControlAnimacion : MonoBehaviour
+public class CameraControler : MonoBehaviour
 {
     private PlayableDirector director;
     private bool isPaused = false;
@@ -13,8 +13,7 @@ public class ControlAnimacion : MonoBehaviour
     public GameObject medicine4; // Referencia al objeto que quieres instanciar
     public GameObject medicine5; // Referencia al objeto que quieres instanciar
     public GameObject winPanel; // Referencia al objeto que quieres instanciar
-    
-   
+    public AdvancedDialogue dialogueScript; // Referencia al script de diálogo
 
     private void Start()
     {
@@ -23,7 +22,6 @@ public class ControlAnimacion : MonoBehaviour
 
     private void Update()
     {
-        
         if (isPaused && Input.GetKeyDown(KeyCode.R))
         {
             ReanudarAnimacion();
@@ -35,8 +33,11 @@ public class ControlAnimacion : MonoBehaviour
         director.playableGraph.GetRootPlayable(0).SetSpeed(0);
         isPaused = true;
     }
-
-    
+    public void PausaBoss()
+    {
+        // Llamar al método para iniciar el diálogo
+        dialogueScript.PauseAnimationAndStartDialogue();
+    }
 
     public void PausarAnimacion()
     {
@@ -63,6 +64,8 @@ public class ControlAnimacion : MonoBehaviour
                 InstanciarObjeto5();
                 break;
         }
+
+        
     }
 
     public void ReanudarAnimacion()
@@ -76,7 +79,6 @@ public class ControlAnimacion : MonoBehaviour
     {
         director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
         isPaused = false;
-        
     }
 
     // Método llamado por un evento en la animación
@@ -91,7 +93,6 @@ public class ControlAnimacion : MonoBehaviour
 
     private IEnumerator EsperarYReanudar()
     {
-        
         yield return new WaitForSeconds(5); // Espera 2 segundos
 
         while (ContarEnemigos() > 0)
@@ -104,7 +105,6 @@ public class ControlAnimacion : MonoBehaviour
 
     private IEnumerator WinCondition()
     {
-
         yield return new WaitForSeconds(5); // Espera 2 segundos
 
         while (ContarEnemigos() > 0)
@@ -123,34 +123,34 @@ public class ControlAnimacion : MonoBehaviour
         return enemigos.Length;
     }
 
-    // Método para manejar la colisión con un trigger
-    
-
     // Método para instanciar el objeto
     private void InstanciarObjeto()
     {
         medicine.SetActive(true);
     }
+
     private void InstanciarObjeto2()
     {
         medicine2.SetActive(true);
     }
+
     private void InstanciarObjeto3()
     {
         medicine3.SetActive(true);
     }
+
     private void InstanciarObjeto4()
     {
         medicine4.SetActive(true);
     }
+
     private void InstanciarObjeto5()
     {
         medicine5.SetActive(true);
     }
+
     private void InstanciarWinPanel()
     {
         winPanel.SetActive(true);
     }
 }
-
-

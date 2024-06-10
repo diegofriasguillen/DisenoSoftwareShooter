@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class AdvancedDialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     public Transform buttonContainer; // Contenedor del botón en la interfaz
     public GameObject objectToDeactivate; // GameObject que se desactivará al final del diálogo
     public CameraControler animationController; // Referencia al script de control de animación
+    public GameObject dialoguePanel; // Panel del diálogo que se activará
 
     private int index;
     private bool isTyping = false;
@@ -24,16 +25,27 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-
-        if (lines.Length > 0)
-        {
-            StartDialogue();
-        }
+        dialoguePanel.SetActive(false); // Asegurarse de que el panel de diálogo esté desactivado al inicio
     }
 
     void Update()
     {
         // Eliminamos la necesidad de revisar una tecla en el método Update
+    }
+
+    public void PauseAnimationAndStartDialogue()
+    {
+        // Pausar la animación
+        animationController.PausaInicial();
+
+        // Activar el panel de diálogo
+        dialoguePanel.SetActive(true);
+
+        // Iniciar el diálogo
+        if (lines.Length > 0)
+        {
+            StartDialogue();
+        }
     }
 
     void StartDialogue()
@@ -106,5 +118,7 @@ public class Dialogue : MonoBehaviour
         Destroy(closeButton);
         // Limpiar el texto del componente TextMeshProUGUI
         textComponent.text = string.Empty;
+        // Desactivar el panel de diálogo
+        dialoguePanel.SetActive(false);
     }
 }
