@@ -18,9 +18,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject vidaText;
     public GameObject pauseButton;
+    public AudioSource caminata;
+    public AudioSource disparo;
 
     private Animator animator;
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     //camera
     public Camera camaraPrincipal; // Referencia a la cámara principal
@@ -68,12 +70,15 @@ public class PlayerManager : MonoBehaviour
     {
         animator.speed = 0f; // Pausa la animación estableciendo su velocidad a cero
         isPaused = true;
+        //caminata.Pause();
+
     }
 
     public void ReanudarAnimacion()
     {
         animator.speed = 1f; // Reanuda la animación estableciendo su velocidad a 1
         isPaused = false;
+
     }
 
     void MoverMira()
@@ -111,6 +116,8 @@ public class PlayerManager : MonoBehaviour
             {
                 enemy.GetDamage(bullet_damage);
             }
+            disparo.Play();
+
         }
         else
         {

@@ -14,6 +14,9 @@ public class CameraControler : MonoBehaviour
     public GameObject medicine5; // Referencia al objeto que quieres instanciar
     public GameObject winPanel; // Referencia al objeto que quieres instanciar
     public AdvancedDialogue dialogueScript; // Referencia al script de diálogo
+    public AudioSource caminata;
+    public AudioSource boss;
+
 
     private void Start()
     {
@@ -37,10 +40,13 @@ public class CameraControler : MonoBehaviour
     {
         // Llamar al método para iniciar el diálogo
         dialogueScript.PauseAnimationAndStartDialogue();
+        boss.Play();
+
     }
 
     public void PausarAnimacion()
     {
+        caminata.Pause();
         director.playableGraph.GetRootPlayable(0).SetSpeed(0); // Pausa la animación
         isPaused = true;
         switch (counter)
@@ -70,6 +76,7 @@ public class CameraControler : MonoBehaviour
 
     public void ReanudarAnimacion()
     {
+        caminata.Play();
         director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
         isPaused = false;
         counter++;
@@ -77,6 +84,7 @@ public class CameraControler : MonoBehaviour
 
     public void QuitarPausaAnim()
     {
+        caminata.Play();
         director.playableGraph.GetRootPlayable(0).SetSpeed(1); // Reanuda la animación
         isPaused = false;
     }
